@@ -1,0 +1,8 @@
+{
+  "name": "race",
+  "version": "1.0.0",
+  "scripts": {
+    "run": "http-server -P http://127.0.0.1:3000"
+  }
+}
+
