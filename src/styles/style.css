@@ -1,3 +1,13 @@
+.start {
+    position: absolute;
+    z-index: 10000;
+    color: chartreuse;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    margin-left: 360px;
+    margin-top: 300px;
+}
+
 .hide {
     display: none;
 }
