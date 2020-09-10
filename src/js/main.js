@@ -1,5 +1,6 @@
 const score = document.querySelector('.score'),
     start = document.querySelector('.start'),
+    description = document.querySelector('.description'),
     gameArea = document.querySelector('.gameArea'),
     car = document.createElement('div');
 
@@ -29,6 +30,7 @@ function getQuantityElements(heightElement) {
 
 function startGame() {
     start.classList.add('hide');
+    description.classList.add('hide');
 
     for (let i = 0; i < getQuantityElements(100); i++) {
         const line = document.createElement('div');
