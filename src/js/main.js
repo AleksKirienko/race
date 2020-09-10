@@ -47,7 +47,7 @@ function startGame() {
         enemy.y = -100 * setting.traffic * (i + 1);
         enemy.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
         enemy.style.top = enemy.y + 'px';
-        enemy.style.background = 'transparent url(./assets/cars/car2.png) center / cover no-repeat';
+        enemy.style.background = getImage();
         gameArea.appendChild(enemy);
     }
 
@@ -137,6 +137,12 @@ function moveEnemy() {
             item.style.left = Math.floor(Math.random() * (gameArea.offsetWidth - 50)) + 'px';
         }
     });
+}
 
-
+function getImage() {
+    let min = 2;
+    let max = 9;
+    const random = Math.floor(Math.random() * (max - min) + min);
+    console.log('random ' + random);
+    return `transparent url(./assets/cars/car${random}.png) center / cover no-repeat`;
 }
