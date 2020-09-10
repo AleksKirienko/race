@@ -31,6 +31,7 @@ function getQuantityElements(heightElement) {
 function startGame() {
     start.classList.add('hide');
     description.classList.add('hide');
+    gameArea.innerHTML = '';
 
     for (let i = 0; i < getQuantityElements(100); i++) {
         const line = document.createElement('div');
@@ -50,16 +51,24 @@ function startGame() {
         gameArea.appendChild(enemy);
     }
 
+    setting.score = 0;
     setting.start = true;
     gameArea.appendChild(car);
+    car.style.left = '125px';
+    car.style.top = 'auto';
+    car.style.bottom = '10px';
+
     setting.x = car.offsetLeft;
     setting.y = car.offsetTop;
     requestAnimationFrame(playGame);
 }
 
 function playGame() {
-    // console.log('Play game!');
+
     if (setting.start) {
+        setting.score += setting.speed;
+        score.textContent = 'SCORE: ' + setting.score;
+
         moveRoad();
         moveEnemy();
         if (keys.ArrowLeft && setting.x > 0) {
@@ -117,6 +126,7 @@ function moveEnemy() {
             carRect.bottom >= enemyRect.top) {
             setting.start = false;
             console.log('авария!');
+            start.classList.remove('hide');
         }
 
         item.y += setting.speed / 2;
