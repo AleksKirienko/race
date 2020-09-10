@@ -4,7 +4,6 @@ const score = document.querySelector('.score'),
     car = document.createElement('div');
 
 car.classList.add('car');
-console.log(start);
 
 start.addEventListener('click', startGame);
 document.addEventListener('keydown', startRun);
@@ -57,7 +56,7 @@ function startGame() {
 }
 
 function playGame() {
-    console.log('Play game!');
+    // console.log('Play game!');
     if (setting.start) {
         moveRoad();
         moveEnemy();
@@ -105,7 +104,19 @@ function moveRoad() {
 
 function moveEnemy() {
     let enemy = document.querySelectorAll('.enemy');
+
     enemy.forEach(function (item) {
+        let carRect = car.getBoundingClientRect(); // получает параметры автомобиля
+        let enemyRect = item.getBoundingClientRect();
+
+        if (carRect.top <= enemyRect.bottom &&
+            carRect.right >= enemyRect.left &&
+            carRect.left <= enemyRect.right &&
+            carRect.bottom >= enemyRect.top) {
+            setting.start = false;
+            console.log('авария!');
+        }
+
         item.y += setting.speed / 2;
         item.style.top = item.y + 'px';
 
