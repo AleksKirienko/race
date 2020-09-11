@@ -5,11 +5,11 @@
 <img alt="electron" width="110px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/electron/electron.png"/>
 
 ## Описание
-**"Race"** - небольшая браузерная игра "Гонки", в которую можно играть, когда нет интернета.
+**"Race"** - небольшая браузерная игра "Гонки", в которую можно играть, когда нет интернета и не только.
 
-**Цель игры: ** набрать как можно больше очков и не врезаться в другие машинки.
+**Цель игры:** набрать как можно больше очков и не врезаться в другие машинки.
 
-**Набор очков: ** в зависимости от сложности игры (скорости движения других машинок) набираются очки. Иными словами, чем дольше играешь, тем больше очков заработаешь.
+**Набор очков:** в зависимости от сложности игры (скорости движения других машинок) набираются очки. Иными словами, чем дольше играешь, тем больше очков заработаешь.
 
 Игра заканчивается, когда происходит авария. 
 
@@ -17,12 +17,12 @@
 
 Есть два способа запуска игры. 
 
-###1. Обычный запуск index.html
+### 1. Обычный запуск index.html
 Для этого можно перетащить html-файл прямо на вкладку и браузер автоматически загрузит страницу.
 Либо нажав правой кнопкой мыши на html-файл, выбрать "открыть с помощью" и выбрать браузер. 
 Также можно открыть html-файл из ide. 
 
-###2. Создание десктоп-приложения с использованием Electron
+### 2. Создание десктоп-приложения с использованием Electron
 
 **Electron** - фреймворк, разработанный GitHub, позволяет разрабатывать нативные графические приложения для операционных систем с помощью веб-технологий. 
 
@@ -48,11 +48,11 @@
  
 Всё, мы установили всё необходимое, поэтому переходим к самомоу запуску приложения: `npm start`
 
-Если вы сделали всё правильно, то вы увидите это:
+Если вы сделали всё правильно, то увидите это:
 
-<img align="left" alt="main" width="200px" src="https://sun4-12.userapi.com/SoLWDrDxZubEEdTzRKM6pRWMzzuCKaJSGyNjbQ/HA0u8f88nog.jpg"/>
-<img align="left" alt="game" width="195px" src="https://sun4-15.userapi.com/75o09M9LMYQ8_qDxGNmQ8qoImv75RKBqU9Vj0Q/dYcvNVJxGas.jpg" />
-<img alt="game" width="200px" src="https://sun4-15.userapi.com/bZUJ7qCAe7eWe5OEVQaUX0EdtqiZ7F_cfLGNhA/zdh_xeIynwc.jpg"/>
+<img align="left" alt="main" width="220px" src="https://sun4-12.userapi.com/SoLWDrDxZubEEdTzRKM6pRWMzzuCKaJSGyNjbQ/HA0u8f88nog.jpg"/>
+<img align="left" alt="game" width="220px" src="https://sun4-15.userapi.com/NQEONZLrUgo-qUO5VMNcqSFhMEpIJoZ9xJz8og/i8gRXkof2hA.jpg" />
+<img alt="game" width="220px" src="https://sun4-15.userapi.com/0P1mxhqRYTfkphwZRYCHzw_17WhMuGdaRmPkTw/4yYWjekmOB8.jpg"/>
 
 ## Что почитать?
  
