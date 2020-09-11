@@ -1,8 +1,25 @@
 {
   "name": "race",
   "version": "1.0.0",
+  "description": "npm init",
+  "main": "src/js/script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
   "scripts": {
-    "run": "http-server -P http://127.0.0.1:3000"
-  }
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksKirienko/race.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksKirienko/race/issues"
+  },
+  "homepage": "https://github.com/AleksKirienko/race#readme"
 }
-
